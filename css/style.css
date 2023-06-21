@@ -4,6 +4,83 @@
     --light: #F8F8F8;
     --dark: #252525;
 }
+.single-portfolio {
+    /* border-radius: 5px; */
+    overflow: hidden;
+    color: #fff; }
+    .single-portfolio > a {
+      overflow: hidden;
+      position: relative;
+      display: block; }
+      .single-portfolio > a:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 100%;
+        z-index: 2;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        background: rgba(0, 0, 0, 0.5); }
+      .single-portfolio > a .contents {
+        margin-top: 20px;
+        visibility: visible;
+        margin-top: 20px;
+        z-index: 3; }
+        .single-portfolio > a .contents h3, .single-portfolio > a .contents .h3 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #fff; }
+      .single-portfolio > a img {
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+      .single-portfolio > a:hover:before {
+        visibility: visible;
+        opacity: 1; }
+      .single-portfolio > a:hover img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.35); }
+      .single-portfolio > a:hover .contents {
+        margin-top: 0px;
+        opacity: 1;
+        visibility: visible; }
+    .single-portfolio .contents {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+      .single-portfolio .contents h3, .single-portfolio .contents .h3 {
+        color: #fff; }
+      .single-portfolio .contents .cat {
+        color: rgb(255, 255, 255); }
+.singleport_h3{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    background-color: #063156fd;
+    line-height: 2;
+    height: 50px;
+}
 
 @media (max-width: 1200px){
     .navh1{
