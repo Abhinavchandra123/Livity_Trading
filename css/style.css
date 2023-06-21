@@ -5,6 +5,38 @@
     --dark: #252525;
 }
 
+@media (max-width: 1200px){
+    .navh1{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 300px){
+    .navh1{
+        font-size: .8rem;
+    }
+}
+@media (min-width: 1300px){
+    .bannerh1{
+        font-size: 4rem;
+    }
+    .banner_img{
+        width: 100vw;
+    }
+    .banner_section{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+@media (min-width: 1600px){
+    .bannerh1{
+        font-size: 5rem;
+    }
+    .banner_img{
+        width: 100vw;
+    }
+}
+
+
 h1,
 h2,
 .h1,
