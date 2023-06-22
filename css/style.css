@@ -3,6 +3,7 @@
     --primary:#194a75;
     --light: #F8F8F8;
     --dark: #252525;
+    overflow-x: hidden;
 }
 .single-portfolio {
     /* border-radius: 5px; */
@@ -660,12 +661,12 @@ h6,
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: var(--primary);
+    color: #F8F8F8;
     margin-right: 10px;
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
+    color: #F8F8F8;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -785,6 +786,9 @@ color: #777;
     #our_client_logo {
       padding: 10px;
     }
+    .logo-container img {
+        max-width: 50% !important;
+        }
   }
   .head{
     text-align: center;
@@ -795,7 +799,7 @@ color: #777;
   .logo-container img {
   display: inline-block;
   vertical-align: middle;
-  max-width: 17%;
+  max-width: 14%;
   max-height: 50%;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
