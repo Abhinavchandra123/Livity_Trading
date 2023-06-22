@@ -51,7 +51,7 @@
       .single-portfolio > a:hover img {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
-        transform: scale(1.35); }
+        transform: scale(1.41); }
       .single-portfolio > a:hover .contents {
         margin-top: 0px;
         opacity: 1;
