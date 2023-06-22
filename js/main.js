@@ -73,10 +73,10 @@
         autoplay: true,
         smartSpeed: 1000,
         loop: true,
-        nav: false,
-        dots: true,
+        nav: true,
+        dots: false,
         items: 1,
-        dotsData: true,
+        dotsData: false,
     });
 
     

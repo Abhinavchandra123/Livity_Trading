@@ -92,6 +92,11 @@
         font-size: .8rem;
     }
 }
+@media (max-width: 500px){
+    .owl-nav{
+        display: none;
+    }
+}
 @media (min-width: 1300px){
     .bannerh1{
         font-size: 4rem;
@@ -582,24 +587,43 @@ h6,
     height: 100px;
 }
 
-.testimonial-carousel .owl-dots .owl-dot::after {
+.owl-prev{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    content: "\f10d";
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    left:-10%;
+}
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    text-align: end;
+    right:-10%;
+    
+}
+.owl-next::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: var(--primary);
-    background: #FFFFFF;
-    border-radius: 40px;
-    transition: .5s;
-    opacity: 0;
+  font-weight: 900;
+  font-size: 24px;
+  content: "\f105";
+}
+.owl-prev::before {
+    font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 24px;
+  content: "\f104";
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active::after {
@@ -752,8 +776,8 @@ color: #777;
   }
   #our_client_logo{
     /*width: 100%;*/
-    /* max-width: 800px; */
-    /*margin: 0 auto;*/
+    max-width: 1200px;
+    margin: 0 auto;
     /*background-color: lightgray;*/
     padding: 20px;
   }
@@ -771,7 +795,7 @@ color: #777;
   .logo-container img {
   display: inline-block;
   vertical-align: middle;
-  max-width: 13%;
+  max-width: 17%;
   max-height: 50%;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
