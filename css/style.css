@@ -176,7 +176,12 @@ h6,
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #ffffff;
+    /* border-color: #000; */
+}
+.btn.btn-primary:hover {
+    color: #181818;
+    /* border-color: #000; */
 }
 
 .btn-square {
@@ -803,6 +808,10 @@ color: #777;
   max-height: 50%;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  }
+
+  .vpp:hover{
+    background-color: #cc0033;
   }
 
 
